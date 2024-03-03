@@ -35,7 +35,7 @@ for (int size = 10; size <= 1000000; size+= 10000){
         auto elapsed_ms = std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin);
         summ += elapsed_ms.count();
     }
-    cout << size << "," << summ / kolvo << endl;
+    cout << size << ";" << summ / kolvo << endl;
 }
 
 return 0;
